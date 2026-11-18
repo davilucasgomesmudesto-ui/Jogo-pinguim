@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invasão</title>
+    <link rel="stylesheet" href="Invasao.css">
+    <link rel="shortcut icon" href="imgs/Jogo Pinguim_ Aventura Gelada.png">
+    </head>
+<body>
+    <audio id="musica" autoplay loop src="musicas/Missão-Impossível.mp3"></audio>
+    <main id="invasao">
+        <div id="hud">
+            <span>Alerta</span>
+            <div id="barra-alerta"><div id="barra-alerta-nivel"></div></div>
+            <button id="botao-pausa">Pausar</button>
+        </div>
+        <div id="hud-missao">
+            <span id="hud-tempo">Tempo: 0:00</span>
+            <span id="hud-cofres">Cofres: 0/0</span>
+            <span id="hud-pendrive" class="hidden">Pendrive: sim</span>
+            <span id="hud-codigo" class="hidden"></span>
+        </div>
+
+        <div id="palco">
+            <canvas id="game" width="1024" height="640"></canvas>
+
+            <!-- Painel do cofre -->
+            <div id="painel-cofre" class="hidden">
+                <h3>Cofre</h3>
+                <div id="painel-digitos"><span></span><span></span><span></span><span></span></div>
+            </div>
+
+            <div id="tela-pausa" class="tela-sobreposta hidden">
+                <h2>Jogo Pausado</h2>
+                <div id="botoes-pausa">
+                    <button id="botao-retomar">Retomar</button>
+                    <button id="botao-desistir">Desistir</button>
+                </div>
+            </div>
+
+            <!-- Resultados -->
+            <div id="tela-resultado" class="tela-sobreposta hidden">
+                <h2 id="resultado-titulo">Missão falhou</h2>
+                <p id="resultado-pontuacao">Pontuação: 0</p>
+                <p id="resultado-tempo" class="hidden"></p>
+                <div id="botoes-resultado">
+                    <button id="botao-ranking" class="hidden">Ir ao ranking</button>
+                    <button id="botao-jogar-de-novo">Tentar de novo</button>
+                </div>
+            </div>
+
+            <!-- Intro -->
+            <div id="tela-intro" class="tela-sobreposta">
+                <h2 id="intro-titulo"></h2>
+                <p id="intro-info"></p>
+                <p id="intro-missao"></p>
+                <p id="intro-dica">O código do cofre aparece por poucos segundos. Memorize!</p>
+                <button id="botao-comecar">Começar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="InvasaoMapas.js"></script>
+    <script src="Invasao.js"></script>
+</body>
+</html>

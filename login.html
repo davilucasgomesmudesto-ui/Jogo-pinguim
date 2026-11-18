@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Pinguim - Conta</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <img id="img1" src="imgs/pinguim.png" alt="Pinguim">
+
+    <div id="caixinha">
+        <h2>Conta</h2>
+
+        <!-- FORMULÁRIO DE LOGIN -->
+        <div id="secao-login">
+            <h3 style="color: var(--azul-escuro); margin-bottom: 10px; font-size: 16px;">Entrar na Conta</h3>
+            <form id="form-usuario">
+                <input type="text" id="usuario-nome" class="input-jogo" placeholder="Nome de usuário" required autocomplete="off">
+                <input type="password" id="usuario-senha" class="input-jogo" placeholder="Senha" required>
+                <button type="submit" id="inicio">Entrar</button>
+            </form>
+
+            <div style="margin-top: 15px; text-align: center;">
+                <button type="button" id="btn-mostrar-cadastro" style="background: none; border: none; color: #075985; font-weight: bold; cursor: pointer; text-decoration: underline; font-size: 13px;">
+                    Não tem uma conta? Cadastre-se aqui
+                </button>
+            </div>
+        </div>
+
+        <!-- FORMULÁRIO DE CADASTRO (Oculto inicialmente) -->
+        <div id="secao-cadastro" style="display: none;">
+            <h3 style="color: var(--azul-escuro); margin-bottom: 10px; font-size: 16px;">Criar Nova Conta</h3>
+            <form id="form-cadastro">
+                <input type="text" id="cad-nome" class="input-jogo" placeholder="Escolha um nome" required autocomplete="off">
+                <input type="password" id="cad-senha" class="input-jogo" placeholder="Escolha uma senha" required>
+                <button type="submit" id="inicio">Cadastrar</button>
+            </form>
+
+            <div style="margin-top: 15px; text-align: center;">
+                <button type="button" id="btn-voltar-login" style="background: none; border: none; color: #075985; font-weight: bold; cursor: pointer; text-decoration: underline; font-size: 13px;">
+                    Já tem uma conta? Faça login
+                </button>
+            </div>
+        </div>
+
+        <!-- MENSAGEM DE ALERTA / RETORNO -->
+        <p id="mensagem-alerta" style="margin-top: 12px; font-size: 14px; font-weight: bold; text-align: center;"></p>
+
+        <!-- BOTÃO DE VOLTAR -->
+        <div style="margin-top: 15px;">
+            <button id="voltar" onclick="window.location.href='index.html'">Voltar ao Menu</button>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

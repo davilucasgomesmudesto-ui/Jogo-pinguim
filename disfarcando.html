@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disfarce</title>
+    <link rel="stylesheet" href="disfarcando.css">
+     <link rel="shortcut icon" href="imgs/Jogo Pinguim_ Aventura Gelada.png">
+</head>
+</head>
+<body>
+    <section id="inicio">
+        <h1>Disfarçando...</h1>
+        <h2>Para se infiltrar no cofre do alvo você terá que se disfarçar como ele.</h2>
+
+        <p id="atencao">Preste atenção no alvo, agente, não temos muito tempo!!</p>
+        <button id="verAlvo">Ver o Alvo</button>
+    </section>
+
+    <section id="alvo">
+        <img src="imgs/alvo.png" id="alvoimg">
+        <img id="chapeu-alvo" class="vestimenta-alvo">
+        <img id="camisa-alvo" class="vestimenta-alvo">
+        <img id="cabelo-alvo" class="vestimenta-alvo">
+        <img id="colar-alvo" class="vestimenta-alvo">
+        <img id="oculos-alvo" class="vestimenta-alvo">
+    </section>
+
+    <section id="disfarce">
+        <h3>Hora de se trocar</h3>
+            <div id="pinguim-container">
+                <img src="imgs/pinguim.png" id="pinguim">
+
+                <img id="chapeu-escolhido" class="vestimenta">
+                <img id="camisa-escolhida" class="vestimenta">
+                <img id="cabelo-escolhido" class="vestimenta">
+                <img id="colar-escolhido" class="vestimenta">
+                <img id="oculos-escolhidos" class="vestimenta">
+            </div>
+         <section id="acessorios">
+                <button>
+                <img src="imgs/cartola.png" class="acessorio" data-alvo="chapeu-escolhido">
+                </button>
+                <button>
+                <img src="imgs/chapeu_palha.png" class="acessorio" data-alvo="chapeu-escolhido">
+                </button>
+                <button>
+                <img src="imgs/boina.png" class="acessorio" data-alvo="chapeu-escolhido">
+                </button>
+                <button>
+                <img src="imgs/cowboy.png" class="acessorio" data-alvo="chapeu-escolhido">
+                </button>
+                <button>
+                <img src="imgs/blusa_preta.png" class="acessorio" data-alvo="camisa-escolhida">
+                </button>
+                <button>
+                <img src="imgs/blusa_vermelha.png" class="acessorio" data-alvo="camisa-escolhida">
+                </button>
+                <button>
+                <img src="imgs/blusa_verde.png" class="acessorio" data-alvo="camisa-escolhida">
+                </button>
+                <button>
+                <img src="imgs/blusa_azul.png" class="acessorio" data-alvo="camisa-escolhida">
+                </button>
+                <button>
+                <img src="imgs/peruca_loira.png" class="acessorio" data-alvo="cabelo-escolhido">
+                </button>
+                <button>
+                <img src="imgs/peruca_preta.png" class="acessorio" data-alvo="cabelo-escolhido">
+                </button>
+                <button>
+                <img src="imgs/peruca_curta.png" class="acessorio" data-alvo="cabelo-escolhido">
+                </button>
+                <button>
+                <img src="imgs/peruca_castanha.png" class="acessorio" data-alvo="cabelo-escolhido">
+                </button>
+                <button>
+                <img src="imgs/colar_perolas.png" class="acessorio" data-alvo="colar-escolhido">
+                </button>
+                <button>
+                <img src="imgs/colar_praia.png" class="acessorio" data-alvo="colar-escolhido">
+                </button>
+                <button>
+                <img src="imgs/colar_diamante.png" class="acessorio" data-alvo="colar-escolhido">
+                </button>
+                <button>
+                <img src="imgs/colar_dourado.png" class="acessorio" data-alvo="colar-escolhido">
+                </button>
+                <button>
+                <img src="imgs/oculos_redondos.png" class="acessorio" data-alvo="oculos-escolhidos">
+                </button>
+                <button>
+                <img src="imgs/oculos_coracao.png" class="acessorio" data-alvo="oculos-escolhidos">
+                </button>
+                <button>
+                <img src="imgs/oculos_rosa.png" class="acessorio" data-alvo="oculos-escolhidos">
+                </button>
+                <button>
+                <img src="imgs/oculos_escuros.png" class="acessorio" data-alvo="oculos-escolhidos">
+                </button>
+                <button>
+                <img src="imgs/delete.webp" class="acessorio" id="lixo">
+                </button>
+            </section>
+            <button id="finalizar">Finalizar</button>
+    </section>
+    <script src="disfarce.js"></script>
+</body>
+</html>
+
